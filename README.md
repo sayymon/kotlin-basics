@@ -34,4 +34,6 @@ Among all these opportunities, modern programmers prefer mobile and server-side 
 
 Entre todas essas oportunidades, os programadores modernos preferem o desenvolvimento móvel e do lado do servidor, mas outras áreas também estão ganhando popularidade.
 
-[Features](Features.md)
+* [Features](Features.md)
+
+* [A brief history](brief-history.md)
