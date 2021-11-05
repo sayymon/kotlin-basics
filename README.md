@@ -39,3 +39,7 @@ Entre todas essas oportunidades, os programadores modernos preferem o desenvolvi
 * [A brief history](brief-history.md)
 
 * [Sample Kotlin](sample-kotlin.md)
+  
+Now, you know what Kotlin is, how it developed, and where it is used. You've learned some of the characteristic features of the language that make it so special. You've also seen your first lines of Kotlin code. There'll be more soon, promise.
+
+Agora, você sabe o que é Kotlin, como foi desenvolvido e onde é usado. Você aprendeu algumas das características da linguagem que a tornam tão especial. Você também viu suas primeiras linhas do código Kotlin. Haverá mais em breve, prometo.
