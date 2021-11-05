@@ -33,3 +33,5 @@ Translate : Kotlin é uma linguagem multiplataforma
 Among all these opportunities, modern programmers prefer mobile and server-side development, but other areas are gaining popularity as well.
 
 Entre todas essas oportunidades, os programadores modernos preferem o desenvolvimento móvel e do lado do servidor, mas outras áreas também estão ganhando popularidade.
+
+[Features](Features.md)
