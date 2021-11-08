@@ -22,6 +22,17 @@ You can add as many underscores as you would like: 1__000_000, 1_2_3. Remember, 
 
 Você pode adicionar quantos sublinhados desejar: 1__000_000, 1_2_3. Lembre-se de que os sublinhados não podem aparecer no início ou no final do número. Se você escrever _10 ou 100_, receberá um erro.
 
+
+FEEDBACK:
+
+Integer values can be separated by one or more underscores with one
+exception, underscores can't appear at the beginning and at the end of
+the number.
+
+Valores inteiros podem ser separados por um ou mais sublinhados com um
+exceção, sublinhados não podem aparecer no início e no final de
+o número.
+
 ##Characters
 A single character can represent a digit, a letter, or another symbol. To write a single character, we wrap a symbol in single quotes as follows: 'A', 'B', 'C', 'x', 'y', 'z', '0', '1', '2', '9'. Character literals can represent alphabet letters, digits from '0' to '9', whitespaces (' '), or some other symbols (e.g., '$').
 
@@ -35,7 +46,7 @@ A character cannot include two or more digits or letters because it represents a
 
 Um caractere não pode incluir dois ou mais dígitos ou letras porque representa um único símbolo. Os dois exemplos a seguir estão incorretos: 'abc', '543' porque esses literais têm muitos caracteres.
 
-Strings
+##Strings
 
 Strings represent text information, such as the text of an advertisement, the address of a web page, or the login to a website. A string is a sequence of any individual characters.
 
@@ -48,3 +59,11 @@ Para escrever strings, colocamos os caracteres entre aspas duplas em vez de simp
 A string can also contain just one single character, like "A". Do not confuse it with the character 'A', which is not a string.
 
 Uma string também pode conter apenas um único caractere, como "A". Não o confunda com o caractere 'A', que não é uma string.
+
+##Conclusion
+Do not confuse these literals:
+
+123 is an integer number, and "123" is a string;
+'A' is a character, and "A" is a string;
+'1' is a character, and 1 is an integer number.
+Kotlin has many other literals, and they are waiting for us.

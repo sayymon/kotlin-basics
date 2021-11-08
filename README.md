@@ -4,12 +4,12 @@ What is Kotlin?
 
 Kotlin is a highly effective modern programming language developed by JetBrains. It has a very clear and concise syntax, which makes your code easy to read.
 
-Translate :"Kotlin é uma linguagem de programação moderna altamente eficaz desenvolvida pela JetBrains. Possui uma sintaxe muito clara e concisa, o que torna seu código fácil de ler."
+Translate: "Kotlin é uma linguagem de programação moderna altamente eficaz desenvolvida pela JetBrains. Possui uma sintaxe muito clara e concisa, o que torna seu código fácil de ler."
 
 Kotlin is widely used around the world, and its popularity among developers is constantly growing. Many developers who use Kotlin note that it makes their work faster and more exciting :)
 
 
-Translate :
+Translate:
 "O Kotlin é amplamente utilizado em todo o mundo e sua popularidade entre os desenvolvedores está crescendo constantemente. Muitos desenvolvedores que usam Kotlin observam que ele torna seu trabalho mais rápido e mais interessante :)"
 
 ![Kotlin Logo](./src/main/resources/images/kotlin-logo.svg)
@@ -42,8 +42,11 @@ Entre todas essas oportunidades, os programadores modernos preferem o desenvolvi
   
 Now, you know what Kotlin is, how it developed, and where it is used. You've learned some of the characteristic features of the language that make it so special. You've also seen your first lines of Kotlin code. There'll be more soon, promise.
 
-Agora, você sabe o que é Kotlin, como foi desenvolvido e onde é usado. Você aprendeu algumas das características da linguagem que a tornam tão especial. Você também viu suas primeiras linhas do código Kotlin. Haverá mais em breve, prometo.
+Agora, sabe o que é Kotlin, como foi desenvolvido e onde é usado. Você aprendeu algumas das características da linguagem que a tornam tão especial. Você também viu suas primeiras linhas do código Kotlin. Haverá mais em breve, prometo.
 
 * [Logging](topics/logging.md)
 
 * [Basic Literals](topics/basic-literals.md)
+
+* [Values and Variables](topics/values-variables.md)
+
