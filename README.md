@@ -45,3 +45,5 @@ Now, you know what Kotlin is, how it developed, and where it is used. You've lea
 Agora, você sabe o que é Kotlin, como foi desenvolvido e onde é usado. Você aprendeu algumas das características da linguagem que a tornam tão especial. Você também viu suas primeiras linhas do código Kotlin. Haverá mais em breve, prometo.
 
 * [Logging](topics/logging.md)
+
+* [Basic Literals](topics/basic-literals.md)
