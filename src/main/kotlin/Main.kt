@@ -13,11 +13,15 @@ fun main(args: Array<String>) {
     println(mainInstance.integerLongNumber())
 
     println("Exemplo Carácter ${mainInstance.caracterExemplo}")
+
+    println(mainInstance.stringExemplo)
 }
 
 class Main(var nome : String) {
 
     val caracterExemplo = 'T'
+
+    val stringExemplo = "String de Exemplo"
 
     /**
      * Forma de Simplificar e melhorar a leitura de numero inteiros longos

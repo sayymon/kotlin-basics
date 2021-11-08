@@ -34,3 +34,17 @@ Não confunda os caracteres que representam números (por exemplo, '9') e os pr�
 A character cannot include two or more digits or letters because it represents a single symbol. The following two examples are incorrect: 'abc', '543' because these literals have too many characters.
 
 Um caractere não pode incluir dois ou mais dígitos ou letras porque representa um único símbolo. Os dois exemplos a seguir estão incorretos: 'abc', '543' porque esses literais têm muitos caracteres.
+
+Strings
+
+Strings represent text information, such as the text of an advertisement, the address of a web page, or the login to a website. A string is a sequence of any individual characters.
+
+Strings representam informações de texto, como o texto de um anúncio, o endereço de uma página da web ou o login em um site. Uma string é uma sequência de quaisquer caracteres individuais.
+
+To write strings, we wrap characters in double quotes instead of single ones. Here are some valid examples: "text", "I want to learn Kotlin", "123456", "e-mail@gmail.com". So, strings can include letters, digits, whitespaces, and other characters.
+
+Para escrever strings, colocamos os caracteres entre aspas duplas em vez de simples. Aqui estão alguns exemplos válidos: "texto", "Eu quero aprender Kotlin", "123456", "e-mail@gmail.com". Portanto, as strings podem incluir letras, dígitos, espaços em branco e outros caracteres.
+
+A string can also contain just one single character, like "A". Do not confuse it with the character 'A', which is not a string.
+
+Uma string também pode conter apenas um único caractere, como "A". Não o confunda com o caractere 'A', que não é uma string.
