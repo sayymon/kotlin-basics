@@ -1,4 +1,4 @@
-#ntroduction to logging
+#Introduction to logging
 
 Introdução ao log
 
@@ -43,3 +43,31 @@ O que nós usualmente logamos depende da aplicação, Em todo caso, devemos ser 
 Providing contextual information in your log messages is very important as well. Often, the success or the failure of a program depends on the user inputs. So, you need to put them in your log messages if necessary. For example, when authenticating a user, log the username that is inputted. Context is also important when your program runs in a concurrent environment. In such a case the thread name can be added to the log message.
 
 Fornecer informações contextuais em suas mensagens de log tambem é muito importante. Muitas vezes, o sucesso ou a falha de um programa depende das entradas do usuario. Portanto, você precisa colocá-los em suas mensagens de log, se necessário. Por exemplo, ao autenticar um usuário, registre o nome de usuário inserido. O contexto também é importante quando seu programa é executado em um ambiente concorrente. Nesse caso, o nome do thread pode ser adicionado à mensagem de log.
+
+Log levels -> Niveis de Logs
+
+We said earlier that a lot of important information can be added to the log file. But what kind of information is it? There are different types that correspond to the accepted logging levels: Debug, Info, Warn, Error, Fatal (from the least critical level to the most critical one).
+
+Dissemos anteriormente que muitas informações importantes podem ser adicionadas ao arquivo de log. Mas que tipo de informação é essa? Existem diferentes tipos que correspondem aos níveis de log aceitos: Debug, Info, Warn, Error, Fatal (do nível menos crítico ao mais crítico).
+
+Let’s see what those log levels are for. -> Vamos ver para que servem esses níveis de log.
+
+Debug logs are used to diagnose applications. Debugging messages inform us about what the program is doing at a certain step and what it gets as a result of these actions. For example, a message can contain information about the output of some function, so that we can see if it should be fixed.
+
+Os logs de depuração são usados para diagnosticar aplicativos. As mensagens de depuração nos informam sobre o que o programa está fazendo em uma determinada etapa e o que obtém como resultado dessas ações. Por exemplo, uma mensagem pode conter informações sobre a saída de alguma função, para que possamos ver se ela deve ser corrigida.
+
+* Info is used to log important information about an application. It is used to log service start, service stop, configurations, assumptions. For example, the information about the user who has just registered on the website.
+* Info é usado para registrar informações importantes sobre um aplicativo. É usado para registrar o início do serviço, a parada do serviço, configurações, suposições. Por exemplo, as informações sobre o usuário que acabou de se cadastrar no site.
+
+* Warn logs are considered to be the first level of application failure. They are usually applied to log repeated attempts to access a resource, missing secondary data, or switching from a primary server to a back-up server. For instance, there can be a message about a possible disconnection with the server. However, it does not affect the user at this point.
+* Os logs de aviso são considerados o primeiro nível de falha do aplicativo. Eles geralmente são aplicados para registrar tentativas repetidas de acessar um recurso, dados secundários ausentes ou mudança de um servidor primário para um servidor de backup. Por exemplo, pode haver uma mensagem sobre uma possível desconexão com o servidor. No entanto, isso não afeta o usuário neste momento.
+
+* Error log level is used for more critical problems. These kinds of issues usually affect the result of the operation but do not terminate the program. Errors are considered to be the second level of application failures. For example, there can be a message that a user could not log in because the database was temporarily unavailable.
+* O nível de log de erros é usado para problemas mais críticos. Esses tipos de problemas geralmente afetam o resultado da operação, mas não encerram o programa. Os erros são considerados o segundo nível de falhas do aplicativo. Por exemplo, pode haver uma mensagem de que um usuário não conseguiu fazer login porque o banco de dados estava temporariamente indisponível.
+
+* Fatal is the third level of application failures. It is used to indicate a much more serious error that causes the termination of the program. Such a message may say that the program totally failed and depending on the time and conditions of this failure the developers can find out how to fix the problem.
+* Fatal é o terceiro nível de falhas do aplicativo. É usado para indicar um erro muito mais sério que causa o encerramento do programa. Essa mensagem pode dizer que o programa falhou totalmente e dependendo do tempo e das condições dessa falha, os desenvolvedores podem descobrir como consertar o problema.
+
+Great, now we know what bugs are usually written into the log file. Now we need to display the log. But what should be displayed? In order to make the log readable and understandable, there is a special recording format. Let's find out more about it below.
+
+Ótimo, agora sabemos quais bugs são geralmente gravados no arquivo de log. Agora precisamos exibir o log. Mas o que deve ser exibido? Para tornar o registro legível e compreensível, existe um formato de gravação especial. Vamos descobrir mais sobre isso abaixo.
