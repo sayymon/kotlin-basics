@@ -23,3 +23,23 @@ Precisamos de registro por vários motivos. Em primeiro lugar, economizará muit
 There are several things to consider when logging: when we log? what we log? how we log? Let’s find out the answers to these questions.
 
 Há várias coisas a se considerar ao registrar: quando registramos? o que nós registramos? como podemos logar? Vamos descobrir as respostas para essas perguntas.
+
+When, What, and How
+
+Quando, o que e como
+
+As we've mentioned above, there are several common reasons to generate logs:
+Como nós mencionamos acima, existem varias razões comuns para geração de logs:
+
+troubleshooting -> Solução de problemas
+auditing -> Auditoria
+profiling -> aprumando, endireitando, comparando, cotejando, alinhando
+statistics -> estatisticas
+
+What we log usually depends on the application. In any case, we should be able to understand the execution path of a program through the logs. It is important to avoid excessive logging as it is costly. For example, there's no need to log the start and the end of every method, their arguments, since they are easy to track. Logs are meant to cover server issues, database issues, networking issues, errors from unanticipated user inputs, states of dynamically created objects, configuration values.
+
+O que nós usualmente logamos depende da aplicação, Em todo caso, devemos ser capazes de entender o caminho da execução de um programa por meio dos logs. Isto é importante para evitar logs excessivos pois é caro. Por exemplo, não há necessidade para logar o começo e o fim de todo o método, seus argumentos, uma vez que são faceis de rastrear. Logs visão cobrir problemas de servidor, banco de dados, redes, erros erros de entradas imprevistas do usuário, estados de objetos criados dinamicamente, valores de configuração  
+
+Providing contextual information in your log messages is very important as well. Often, the success or the failure of a program depends on the user inputs. So, you need to put them in your log messages if necessary. For example, when authenticating a user, log the username that is inputted. Context is also important when your program runs in a concurrent environment. In such a case the thread name can be added to the log message.
+
+Fornecer informações contextuais em suas mensagens de log tambem é muito importante. Muitas vezes, o sucesso ou a falha de um programa depende das entradas do usuario. Portanto, você precisa colocá-los em suas mensagens de log, se necessário. Por exemplo, ao autenticar um usuário, registre o nome de usuário inserido. O contexto também é importante quando seu programa é executado em um ambiente concorrente. Nesse caso, o nome do thread pode ser adicionado à mensagem de log.

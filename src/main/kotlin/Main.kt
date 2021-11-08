@@ -5,4 +5,13 @@ fun main(args: Array<String>) {
     println("Program arguments: ${args.joinToString()}")
 
     println("Hello, Kotlin!")
+
+    val mainInstance = Main("Classe Teste")
+
+    println(mainInstance.nome)
+}
+
+class Main(var nome : String) {
+
+
 }
