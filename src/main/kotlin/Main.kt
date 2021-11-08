@@ -80,6 +80,18 @@ class Main(var nome: String) {
 
         println(variavelTipoDeclarativa)
 
+        /*
+            val n: Int = "abc" -> Type mismatch/Tipo incompativel
+            var age = 30 // the type is inferred as Int
+            age = "31 years old" // Type mismatch
+         */
+
+        /*
+        val age: Int; // line 1
+        val name: String = "Kotlin"
+        println(age) // line 3 error must initializer
+        println(name)
+        */
     }
 
 
