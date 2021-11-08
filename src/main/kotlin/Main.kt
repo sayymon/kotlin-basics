@@ -21,9 +21,12 @@ fun main(args: Array<String>) {
     println(mainInstance.stringExemplo)
 
     mainInstance.exemploVariaveisImutaveis()
+
+    mainInstance.exemploDataTypes()
 }
 
-class Main(var nome : String) {
+class Main(var nome: String) {
+
 
     /**
      * val representa uma constante
@@ -62,6 +65,21 @@ class Main(var nome : String) {
             number = "twelve"  an error here!
          */
         println(number)
+    }
+
+    /**
+     * Kotlin nativamente usa a inferencia para definição dos tipos mais permite tipagem implicita
+     */
+    fun exemploDataTypes(){
+
+        val variavelTipoPorInferencia = "Tipo String"
+
+        println(variavelTipoPorInferencia)
+
+        val variavelTipoDeclarativa : Long = 10
+
+        println(variavelTipoDeclarativa)
+
     }
 
 

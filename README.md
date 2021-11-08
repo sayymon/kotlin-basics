@@ -50,3 +50,5 @@ Agora, sabe o que é Kotlin, como foi desenvolvido e onde é usado. Você aprend
 
 * [Values and Variables](topics/values-variables.md)
 
+* [Data Types](topics/data-types.md)
+
