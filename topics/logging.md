@@ -71,3 +71,29 @@ Os logs de depuração são usados para diagnosticar aplicativos. As mensagens d
 Great, now we know what bugs are usually written into the log file. Now we need to display the log. But what should be displayed? In order to make the log readable and understandable, there is a special recording format. Let's find out more about it below.
 
 Ótimo, agora sabemos quais bugs são geralmente gravados no arquivo de log. Agora precisamos exibir o log. Mas o que deve ser exibido? Para tornar o registro legível e compreensível, existe um formato de gravação especial. Vamos descobrir mais sobre isso abaixo.
+
+Log Format -> Formato do Log
+
+To investigate a bug, we need to know when it happened, how serious it was, and who came across it. Thus, the log format generally looks like this:
+
+Para investigar um bug, precisamos saber quando ele aconteceu, quão sério era e quem o encontrou. Assim, o formato do registro geralmente se parece com este:
+
+```
+[date time][log level][message]
+```
+So, it starts with the date and time of when the error occurred. Then comes the log level, and the last thing is the message with the explanation of what exactly happened. More specifically, if we, for example, want to monitor who registers on our site, we need the corresponding logs with Info log level. Then every time a user sends data to the site, we will log a message about this event. For example, on February 2, 2021, a user with the nickname 'demo' registered on the site at 3 pm. Then the log will look like this:
+
+Portanto, começa com a data e hora em que ocorreu o erro. Em seguida, vem o nível de log, e a última coisa é a mensagem com a explicação do que exatamente aconteceu. Mais especificamente, se quisermos, por exemplo, monitorar quem se registra em nosso site, precisamos dos respectivos logs com nível de log Info. Então, toda vez que um usuário enviar dados para o site, iremos registrar uma mensagem sobre este evento. Por exemplo, em 2 de fevereiro de 2021, um usuário com o apelido 'demo' se cadastrou no site às 15h. Então, o log ficará assim:
+```
+[2021-02-02 15:00:00] [INFO] User 'demo' has registered
+```
+And if some user named 'alex98' cannot log in because of some technical issues, we will receive an Error message:
+
+E se algum usuário chamado 'alex98' não conseguir fazer login devido a alguns problemas técnicos, receberemos uma mensagem de erro:
+```
+[2021-02-02 01:00:10] [ERROR] User 'alex98' cannot log in because the database is temporarily unavailable
+```
+Thus, we will know that user 'alex98' failed to log in due to our database being temporarily unavailable. We have localized the problem and know exactly what we need to do: check the database and fix it.
+
+Assim, saberemos que o usuário 'alex98' falhou ao efetuar o login devido ao nosso banco de dados estar temporariamente indisponível. Localizamos o problema e sabemos exatamente o que precisamos fazer: verificar o banco de dados e corrigi-lo.
+
